@@ -6,7 +6,7 @@ export const FETCH_FAILURE = 'FETCH_FAILURE';
 
 export const fetchCharacter = () => dispatch => {
     dispatch({ type: FETCH_START});
-    axios.get('https://anapioficeandfire.com/api/characters')
+    axios.get('https://cors-anywhere.herokuapp.com/https://anapioficeandfire.com/api/characters/')
     .then(response => {
         dispatch({ type: FETCH_SUCCESS, payload: response.data });
     })

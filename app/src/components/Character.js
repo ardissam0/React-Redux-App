@@ -8,7 +8,7 @@ import { fetchCharacter } from '../actions/index';
 const Character = props => {
     return (
         <div className='character-contain'>
-            <button className='btn' onClick={props.fetchCharacter}>Get Character</button>
+            <button className='btn' onClick={props.fetchCharacter}>Get Characters</button>
             {props.character && !props.isLoading}
             {props.isLoading &&
             (
@@ -26,7 +26,7 @@ const Character = props => {
                         <h2>Name: {character.name}</h2>
                         <h2>Gender: {character.gender}</h2>
                         <h2>Culture: {character.culture}</h2>
-                        <h2>Status: {character.status}</h2>
+                        <h2>Alias: {character.aliases}</h2>
                     </div>
                 )
             })}
