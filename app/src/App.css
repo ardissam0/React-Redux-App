@@ -1,10 +1,12 @@
+h1 { font-family: 'MedievalSharp', cursive;
+}
 .App {
   text-align: left;
 }
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #34455B;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,15 +17,24 @@
 }
 
 button {
-  width: 150px;
-  padding: 3%;
+  color: white;
+  width: 200px;
+  padding: 1%;
   font-size: 1.3rem;
   font-weight: bold;
-  border: 2px solid red;
-  background-color: red;
+  border: 8px solid #AD8941;
+  background-color: #656663;
+  font-family: 'MedievalSharp', cursive;
+  border-radius: 15px;
+}
+
+@media(max-width: 400px) {
+  button {
+    margin-left: 10px;
+  }
 }
 
 button:hover {
-  background-color: darkred;
+  background-color: #974449;
   color: white;
 }
