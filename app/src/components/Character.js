@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Loader from 'react-loader-spinner';
 
 import { fetchCharacter } from '../actions/index';
+import '../App.css';
 import styled from 'styled-components';
 
 const GOTstyledDiv = styled.div`
@@ -21,7 +22,7 @@ const GOTstyledDiv = styled.div`
   &:hover {
       color: #974449;
   }
-  @media(max-width: 400px) {
+  @media(max-width: 650px) {
       width: 88%;
       margin-left: 10px;
       font-size: 1.2rem;
